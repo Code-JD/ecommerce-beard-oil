@@ -9,4 +9,5 @@ class AccountInformation extends Component {
         )
     }
 }
+
 export default AccountInformation;

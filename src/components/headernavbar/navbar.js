@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import { connect } from "react-redux";
+import * as actions from "../../actions";
 
 class Navbar extends Component {
     render() {
@@ -27,6 +28,6 @@ function mapStateToProps(state) {
     }
 }
 
-Navbar = connect(mapStateToProps)(Navbar);
+Navbar = connect(mapStateToProps, actions)(Navbar);
 
 export default Navbar;
